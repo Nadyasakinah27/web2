@@ -1,0 +1,44 @@
+1. Jelaskan apa yang dimaksud dengan dokumen root ?
+2. Pada apache web server, apakah dokumen root harus terletak dalam direktori
+C:\xampp\htdocs ? Jelaskan jawaban anda
+3. Jelaskan apa yang dimaksud dengan perintah git : init, clone, remote, add, commit, push
+dan checkout
+4. Jelaskan perbedaan antara GitHub dan GitLab
+5. Apa bedanya variable user dengan variable system ?
+6. Apa persamaan variable system dengan variable constant ?
+
+jawaban
+
+1. Dokumen root (document root) adalah direktori utama di dalam server web yang digunakan untuk menyimpan file dan halaman web yang akan diakses oleh pengguna melalui browser. Ketika pengguna mengakses suatu website, server akan mencari file yang diminta di dalam direktori ini. Contohnya, pada server Apache, file utama seperti index.html atau index.php biasanya diletakkan di dalam document root agar bisa diakses langsung oleh pengunjung.
+2. Tidak harus. Secara default, pada Apache yang diinstal melalui XAMPP di Windows, document root berada di C:\xampp\htdocs. Namun, lokasi ini bisa diubah dengan mengedit file konfigurasi Apache (httpd.conf).
+3. git init
+   Perintah ini digunakan untuk menginisialisasi repository Git baru dalam suatu folder. Ini akan membuat folder .git yang berisi metadata repository.
+   git clone
+   Perintah ini digunakan untuk menduplikasi repository yang sudah ada dari server atau repositori lain ke komputer lokal.
+   git remote
+   Perintah ini digunakan untuk mengelola koneksi ke repository jarak jauh (remote repository), seperti GitHub atau GitLab.
+   git add
+   Perintah ini digunakan untuk menambahkan file ke dalam staging area sebelum dilakukan commit.
+   git commit
+   Perintah ini digunakan untuk menyimpan perubahan yang telah ditambahkan ke staging area ke dalam repository lokal.
+   git push
+   Perintah ini digunakan untuk mengunggah perubahan yang telah dikomit ke repository jarak jauh.
+   git checkout
+   Perintah ini digunakan untuk berpindah antar-branch atau mengembalikan file ke versi sebelumnya.
+4. GitHub
+   pemilik : microsoft
+   hosting : fokus pada repositori
+   fitur : terbatas
+   keamanan : kontrol akses berbasis tim
+   target pengguna : open souerce,start up,developer individual
+   GitLab
+   pemilik : GitLab inc
+   hosting : bisa host seendiri
+   fitur : terintegrasi dengan GitLab CI/CD
+   keamanan : keamanan lebih tinggi dengan akses kontrol lebih detail
+   target pengguna : enterprise
+5. Variabel user adalah variabel lingkungan (environment variable) yang hanya berlaku untuk akun pengguna tertentu di sistem operasi. Misalnya, jika seorang user mengatur variabel PATH khusus untuk dirinya sendiri, variabel itu tidak akan memengaruhi user lain.
+   Variabel system adalah variabel yang berlaku untuk semua pengguna dalam sistem. Variabel ini biasanya diatur oleh administrator dan digunakan oleh sistem serta aplikasi yang berjalan di komputer.
+6. Persamaan: Keduanya digunakan untuk menyimpan nilai yang tidak sering berubah dalam sistem atau program.
+   Perbedaan: Variabel system digunakan dalam lingkungan sistem operasi dan bisa berubah oleh administrator.
+              Variabel constant (konstanta dalam pemrograman) adalah nilai tetap dalam kode program yang tidak bisa diubah selama program berjalan
